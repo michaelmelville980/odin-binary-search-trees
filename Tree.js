@@ -32,6 +32,42 @@ export default class Tree {
 
     insert(value){
 
+        /* Node with no children */
+        if (this.left === null && this.right === null){
+            if (value < this.data){
+                this.left = new Node(value);
+            }else if (value > this.data){
+                this.right = new Node(value);
+            }
+        }
+
+        /* Node with only left child*/
+        else if (this.left !== null && this.right === null){
+            if (value < this.data){
+                this.left.insert(value);
+            }else if (value > this.data){
+                this.right = new Node(value)
+            }
+        }
+
+        /* Node with only right child */
+        else if (this.left === null && this.right !== null){
+            if (value < this.data){
+                this.left = new Node(value);
+            }else if (value > this.data){
+                this.right.insert(value);
+            }
+        }
+
+        /* Node with both children */
+        else {
+            if (value < this.data){
+                this.left = this.left.insert(value);
+            }else if (value > this.data){
+                this.right = this.right.insert(value);
+            }
+        }
+
     }
 
 
@@ -72,7 +108,7 @@ export default class Tree {
     }
 
     rebalance(){
-        
+
     }
 
 }
