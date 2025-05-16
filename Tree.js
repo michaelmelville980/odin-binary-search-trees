@@ -30,4 +30,49 @@ export default class Tree {
         );
     }
 
+    insert(value){
+
+    }
+
+
+    deleteItem(value){
+
+    }
+
+    find(value){
+        return Node;
+    }
+
+    levelOrder(callback){
+
+    }
+
+    inOrder(callback){
+
+    }
+
+    preOrder(callback){
+
+    }
+
+    postOrder(callback){
+
+    }
+
+    height(value){
+
+    }
+
+    depth(value){
+
+    }
+
+    isBalanced(){
+
+    }
+
+    rebalance(){
+        
+    }
+
 }
