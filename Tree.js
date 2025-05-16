@@ -30,38 +30,8 @@ export default class Tree {
         );
     }
 
+   
 
-    deleteItem(value){
-
-    }
-
-    find(value){
-        return Node;
-    }
-
-    levelOrder(callback){
-
-    }
-
-    inOrder(callback){
-
-    }
-
-    preOrder(callback){
-
-    }
-
-    postOrder(callback){
-
-    }
-
-    height(value){
-
-    }
-
-    depth(value){
-
-    }
 
     isBalanced(){
 
@@ -70,5 +40,17 @@ export default class Tree {
     rebalance(){
 
     }
+
+
+    
+
+
+  
+
+
+    }
+
+
+    
 
 }
